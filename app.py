@@ -17,6 +17,7 @@ app_colors = {
 }
 
 app = dash.Dash(__name__)
+server = app.server
 app.layout = html.Div(
     [html.H2('Live Twitter Sentiment', style={'color': "#CECECE"}),
      dcc.Input(id='sentiment_term', value='', placeholder='enter a term', type='text',
