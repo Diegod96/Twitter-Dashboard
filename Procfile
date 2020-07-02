@@ -1,1 +1,1 @@
-worker: python app.py & twitter_streamer.py & wait -n
+web: gunicorn app:server
