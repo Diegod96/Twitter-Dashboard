@@ -1,4 +1,5 @@
 import json
+import os
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
@@ -7,6 +8,12 @@ from unidecode import unidecode
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import sqlite3
 import time
+
+ckey = os.environ.get("ckey")
+csecret = os.environ.get("csecret")
+atoken = os.environ.get("atoken")
+atokensecret = os.environ.get("atokensecret")
+
 
 # it's ok to use one shared sqlite connection
 # as we are making selects only, no need for any kind of serialization as well
