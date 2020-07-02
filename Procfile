@@ -1,1 +1,1 @@
-worker: app.py & twitter_streamer.py & wait -n
+worker: python app.py & twitter_streamer.py & wait -n
