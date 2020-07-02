@@ -2,7 +2,7 @@ import json
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
-from config import *
+# from config import *
 from unidecode import unidecode
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import sqlite3
